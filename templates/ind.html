@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Cell Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            padding: 20px;
+        }
+        .left-panel {
+            flex: 1;
+            width: 30%;
+            background-color: gray;
+            padding-right: 20px;
+        }
+        .image-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .predict-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1>Next-gen Haematological Diagnosis</h>
+            
+            <form class="p-3 text-center" action='/', method="post" enctype="multipart/form-data">
+                <input class="form-control" type="file" name="imageFile" >
+                <input class="btn btn-primary mt-3"type="submit" value="Predict Image" >
+            </form>
+        </div>
+
+
+        <!-- Add your prediction results or other content here -->
+    </div>
+</body>
+</html>
